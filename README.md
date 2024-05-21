@@ -7,7 +7,7 @@ This is a [GoFiber](https://gofiber.io/) app
 First, run the server using:
 
 ```bash
-go run server.go
+go run main.go
 ```
 
 Then open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
