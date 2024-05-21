@@ -8,7 +8,7 @@ import (
 
 type User struct {
 	ID        int            `json:"id" gorm:"primaryKey"`
-	Name      string         `json:"username" form:"username" validate:"required" gorm:"not null"`
+	Username  string         `json:"username" form:"username" validate:"required" gorm:"not null"`
 	Email     string         `json:"email" form:"email" validate:"required,email" gorm:"not null"`
 	Password  string         `json:"-" form:"password" validate:"required" gorm:"not null,colum:password"`
 	CreatedAt time.Time      `json:"created_at"`
