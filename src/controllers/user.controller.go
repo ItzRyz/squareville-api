@@ -38,11 +38,6 @@ func CreateUsers(c *fiber.Ctx) error {
 		})
 	}
 
-	newUser := models.User{
-		Username: user.Username,
-		Email:    user.Email,
-	}
-
 	hashPassword, err := utils.HashPassword(user.Password)
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
@@ -50,7 +45,11 @@ func CreateUsers(c *fiber.Ctx) error {
 		})
 	}
 
-	newUser.Password = hashPassword
+	newUser := models.User{
+		Username: user.Username,
+		Email:    user.Email,
+		Password: hashPassword,
+	}
 
 	database.DB.Debug().Create(&newUser)
 
