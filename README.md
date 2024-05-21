@@ -17,8 +17,7 @@ Then open [http://localhost:8000](http://localhost:8000) with your browser to se
 
 Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+[Squareville API](https://github.com/ItzRyz/squareville-api) © 2024 by [Muhammad Salman Al Farizi](https://github.com/ItzRyz) is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International][cc-by-nc-nd].
 
 [![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
 
